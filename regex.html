@@ -9,6 +9,7 @@
 			var firstName=document.getElementById("firstname").value
 			var mobile=document.getElementById("mobile").value
 			var email=document.getElementById("email").value
+			var group=document.getElementsByClassName("group").value
 			var firstNameCheck=/^[a-zA-Z ]+$/
 			var mobileCheck=/^[0-9]{10}$/
 			var emailCheck=/^[a-zA-Z0-9#.]+@[a-z]+\.[a-z]{2,3}$/
@@ -33,6 +34,10 @@
 				alert("email is not valid")
 				return false
 			}
+			if(group==""){
+				alert("please select any one")
+				return false
+			}
 			return true
 		}
 	</script>
@@ -42,6 +47,12 @@
 		<p><input id="firstname" type="text" placeholder="entername"></p>
 		<p><input id="mobile" type="text" placeholder="moblie number"></p>
 		<p><input id="email"  placeholder="emailaddress"></p>
+		<p><input class="group" type="radio" value="male" name="gender">male</p>
+		<p><input class="group" type="radio" name="gender" value="female">female</p>
+		<p><input class="group" type="radio" value="others" name="gender">others</p>
+		<p><input type="checkbox" value="MPC">MPC</p>
+		<p><input type="checkbox" value=MPCS>MPCS</p>
+		<p><input type="checkbox" value=""></p>
 		<button>submit</button>
 	</form>
 
