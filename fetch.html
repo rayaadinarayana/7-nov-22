@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<section id="emp" style="display:flex" >
+		
+	</section>
+	<script type="text/javascript">
+		/*fetch("https://reqres.in/api/users?page=2")
+		.then((res)=>{
+			console.log(res)
+			return res.json()
+		})
+		.then((jsonResponse)=>{
+			//console.log(jsonResponse)
+			display(jsonResponse.data)
+		})
+		function display(employees){
+			var block=document.getElementById("emp")
+			for(i=0;i<employees.length;i++){
+				block.innerHTML+=`<div><p>${employees[i].first_name}<p>
+				<img src="${employees[i].avatar}" width="50%"/>
+				<div>`;
+			}
+			//block.innerHTML=employees[0].first_name
+		}*/
+		fetch("https://reqres.in/api/unknown")
+		.then((a)=>{
+			console.log(a)
+			return a.json()
+		})
+		.then((jsonData)=>{
+			console.log(jsonData.data)
+		})
+	</script>
+
+</body>
+</html>
